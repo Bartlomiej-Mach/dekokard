@@ -1,0 +1,58 @@
+// styling primary button
+
+.btn-primary {
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    max-width: 300px;
+    .button-value {
+        letter-spacing: .6rem;
+        font-size: 2.3rem;
+        color: $color-black;
+        @include break-point-down(md) {
+            font-size: 1.8rem;
+        }
+    }
+    .arrow-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 1px;
+        transition: 0.4s;
+        width: 20px;
+        height: 20px;
+        @include break-point-down(md) {
+            width: 16px;
+            height: 16px;
+            margin-top: -1px;
+        }
+        .arrow-line {
+            width: 20px;
+            height: 4px;
+            background-color: $color-black;
+            position: absolute;
+            transition: .4s;
+            @include break-point-down(md) {
+                width: 16px;
+                height: 4px;
+            }
+        }
+        .line-left {
+            transform: rotate(90deg);
+        }
+        
+    }
+    &:hover .arrow-container {
+        transform: rotate(315deg);
+        .line-left {
+            right: -8px;
+            @include break-point-down(md) {
+                right: -6px;
+            }
+        }
+        .line-right {
+            bottom: 0px;
+        }
+    }
+}

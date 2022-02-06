@@ -1,0 +1,62 @@
+.slider-section {
+    width: 100%;
+    .swiper {
+        width: 100%;
+        .swiper-wrapper {
+            width: 100%;
+            .swiper-slide {
+                width: 100%;
+                height: 275px;
+                position: relative;
+                overflow: hidden;
+                &--bg-img {
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    transition: .2s;
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+                }
+                &--ofert-name {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: center;
+                    background-color: $color-white;
+                    span {
+                        font-size: 3.6rem;
+                        color: $color-black;
+                        font-family: $font-babes;
+                        line-height: 3.5rem;
+                    }
+                }
+
+
+                .slider-1 {
+                    background-image: url('../../../assets/imgs/galery-page/img-3.jpg');
+                }
+                .slider-2 {
+                    background-image: url('../../../assets/imgs/galery-page/img-7.jpg');
+                }
+                .slider-3 {
+                    background-image: url('../../../assets/imgs/galery-page/img-10.jpg');
+                }
+                .slider-4 {
+                    background-image: url('../../../assets/imgs/galery-page/img-17.jpg');
+                }
+                .slider-5 {
+                    background-image: url('../../../assets/imgs/galery-page/img-15.jpg');
+                }
+                .slider-6 {
+                    background-image: url('../../../assets/imgs/galery-page/img-1.jpg');
+                }
+                .slider-7 {
+                    background-image: url('../../../assets/imgs/galery-page/img-21.jpg');
+                }
+            }
+        }
+    }
+}

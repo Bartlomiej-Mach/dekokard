@@ -1,0 +1,75 @@
+// Sizes
+
+
+$font-h1-desktop: 8rem;
+$font-h1-mobile: 4.2rem;
+
+$font-h2-desktop: 7rem;
+$font-h2-mobile: 5rem;
+
+$font-h3-desktop: 2.3rem;
+$font-h3-mobile: 1.8rem;
+
+$font-text: 1.8rem;
+
+// Weight
+
+$font-light: 300;
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-black: 900;
+
+// font family
+
+$font-babes: 'Bebas Neue', cursive;
+$font-spartan: 'Spartan', sans-serif;
+$font-anton:  'Anton', sans-serif;
+
+
+// baisic typography
+html { 
+    font-size: 10px; 
+}
+
+h1 {
+    font-size: $font-h1-desktop;
+    font-weight: $font-regular;
+    color: $color-orange;
+    font-family: $font-babes;
+    @include break-point-down(md) {
+        font-size: $font-h1-mobile;
+    }
+}
+
+h2 {
+    font-size: $font-h2-desktop;
+    font-weight: $font-regular;
+    font-family: $font-babes;
+    @include break-point-down(md) {
+        font-size: $font-h2-mobile;
+    }
+}
+
+h3 {
+    font-size: $font-h3-desktop;
+    font-weight: $font-regular;
+    font-family: $font-semi-bold;
+    @include break-point-down(md) {
+        font-size: $font-h3-mobile;
+    }
+}
+
+
+p {
+    font-family: $font-spartan;
+    font-weight: $font-regular;
+    font-size: $font-text;
+}
+
+a {
+    text-decoration: none;
+    font-size: $font-text;
+    font-weight: $font-semi-bold;
+    font-family: $font-spartan;
+}

@@ -1,0 +1,19 @@
+// BAISICS
+@import './breakpoints/breakpoints';
+@import './colors/colors';
+@import './typography/typography';
+@import './baisic/baisic';
+
+// ELEMENTS
+@import './elements/buttons';
+
+
+// COMPONENTS
+@import './components/navigation/navigation';
+@import './components/primary-home/primary-home';
+@import './components/primary-info/primary-info';
+@import './components/primary-galery/primary-galery';
+@import './components/primary-slider/primary-slider';
+@import './components/primary-contact/primary-contact';
+@import './components/footer/footer';
+@import './components/primary-welcome-anim/primary-welcome-anim';
