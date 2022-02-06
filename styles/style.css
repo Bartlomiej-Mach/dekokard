@@ -69,6 +69,7 @@ body, html {
   scroll-behavior: smooth;
   -webkit-transition: .4s;
   transition: .4s;
+  background-color: #fff;
 }
 
 *,
@@ -1387,6 +1388,12 @@ body, html {
   }
   .footer-container .footer-content-container__policy::before {
     display: none;
+  }
+  .footer-container .footer-content-container__policy span {
+    font-size: 1rem;
+  }
+  .footer-container .footer-content-container__policy span a {
+    font-size: 1rem;
   }
   .footer-container .footer-content-container__policy ul li a i {
     font-size: 25px;
