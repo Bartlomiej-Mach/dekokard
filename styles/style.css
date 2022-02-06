@@ -358,6 +358,13 @@ body, html {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  .navigation-container .primary-nav-list .nav-list li a {
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+  }
+}
+
 .navigation-container .primary-nav-list .nav-list li a:hover {
   background-size: 100% 200%;
 }
