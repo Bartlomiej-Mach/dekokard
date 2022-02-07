@@ -20,7 +20,8 @@
             position: absolute;
             left: 0;
             top: 0;
-            background-color: rgba($color: $color-black, $alpha: .6);
+            background-color: $color-black;
+            opacity: 0.7;
         }
         .movie {
             width: 100%;
