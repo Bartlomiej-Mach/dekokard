@@ -104,8 +104,8 @@
             &--text-slider {
                 margin-top: 70px;
                 position: relative;
-                height: 27px;
-                overflow: hidden;
+                // height: 27px;
+                // overflow: hidden;
                 opacity: 0;
                 animation: get-in-2 0.5s ease-in-out 4.2s forwards;
                 @include break-point-down(md) {
@@ -124,17 +124,25 @@
                     display: flex;
                     flex-direction: column;
                     margin-left: 85px;
-                    animation: text-slider 10s linear infinite;
+                    width: 200px;
+                    height: 40px;
                     @include break-point-down(md) {
                         margin-left: 65px;
                     }
-                    .slider-text {
-                        display: inline-block;
-                        font-size: 2.5rem;
-                        font-family: $font-spartan;
-                        font-weight: $font-light;
-                        @include break-point-down(md) {
-                            color: $color-white;
+                    .swiper2 {
+                        width: 200px;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .slider-text {
+                                    display: inline-block;
+                                    font-size: 2.5rem;
+                                    font-family: $font-spartan;
+                                    font-weight: $font-light;
+                                    @include break-point-down(md) {
+                                        color: $color-white;
+                                    }
+                                }   
+                            }
                         }
                     }
                 }
@@ -176,36 +184,6 @@
     }
 }
 
-
-@keyframes text-slider {
-    0% {
-        transform: translateY(0px);
-    } 
-    20% {
-        transform: translateY(0px);
-    }
-    25% {
-        transform: translateY(-33px);
-    }
-    45% {
-        transform: translateY(-33px);
-    }
-    50% {
-        transform: translateY(-66px);
-    }
-    70% {
-        transform: translateY(-66px);
-    }
-    75% {
-        transform: translateY(-99px);
-    }
-    95% {
-        transform: translateY(-99px);
-    }
-    100% {
-        transform: translateY(-125px);
-    }
-}
 
 @keyframes get-in {
     form {
