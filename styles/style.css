@@ -441,6 +441,15 @@ body, html {
           transition-delay: .3s;
 }
 
+.navigation-container .primary-nav-list .social-list--item:nth-child(3) a {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.navigation-container .primary-nav-list .social-list--item:nth-child(3) a i {
+  font-size: 24px;
+}
+
 .nav-list--active {
   -webkit-transform: translateX(-400px);
           transform: translateX(-400px);
@@ -500,6 +509,13 @@ body, html {
           transform: translateY(0);
   -webkit-transition-delay: 1s !important;
           transition-delay: 1s !important;
+}
+
+.nav-list--active .social-list--item:nth-child(3) a {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 1.2s !important;
+          transition-delay: 1.2s !important;
 }
 
 .nav-anim {

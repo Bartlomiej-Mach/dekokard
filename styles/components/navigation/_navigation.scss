@@ -193,6 +193,14 @@
                         transition-delay: .3s;
                     }
                 }
+                &:nth-child(3) {
+                    a {
+                        transition-delay: .4s;
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -247,6 +255,12 @@
                 a {
                     transform: translateY(0);
                     transition-delay: 1s !important;
+                }
+            }
+            &:nth-child(3) {
+                a {
+                    transform: translateY(0);
+                    transition-delay: 1.2s !important;
                 }
             }
         }
