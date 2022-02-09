@@ -34,23 +34,11 @@
                 h2 {
                     margin-top: 20px;
                 }
-                .hours-list {
-                    list-style: none;
-                    text-align: right;
-                    max-width: 210px;
-                    li:not(:last-child) {
-                        margin-bottom: 8px;
-                    }
-                    li {
-                        span {
-                           font-family: $font-spartan;
-                           font-size: 2rem; 
-                        }
-                        .day {
-                            font-weight: $font-bold;
-                            margin-right: 15px;
-                        }
-                    }
+                span {
+                    font-size: 2rem;
+                    font-family: $font-spartan;
+                    max-width: 400px;
+                    display: inline-block;
                 }
             }
         }
